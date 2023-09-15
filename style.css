@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&display=swap");
+
+* {
+  --pawn1: rgb(215, 60, 107);
+  --pawn2: rgb(101, 178, 198);
+  --grid-bg: rgb(1, 48, 59);
+  --main-bg: #141518;
+  --whole-bg: rgb(255, 255, 255);
+  --bttn-bg: rgb(1, 32, 39);
+}
+
+body {
+  background-color: var(--main-bg);
+  text-align: center;
+  font-family: "Carter One", cursive;
+  font-size: large;
+
+  padding: 0;
+  margin: 0;
+
+  height: 99%;
+  width: 99%;
+}
+
+/*----- Main -----*/
+
+h1 {
+  color: white;
+  cursor: default;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+
+  background-color: var(--grid-bg);
+
+  width: 50vw;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+}
+
+.grid-item{
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 4vw;
+  height: 4vw;
+  background-color: var(--whole-bg);
+}
+
+
+/*----- Action -----*/
+
+.action{
+  background-color: var(--bttn-bg);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+/* Add */
+.add {
+  background : none;
+  border: none;
+}
+
+.add:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.add:disabled{
+  opacity: 0.5;
+}
+
+.add:hover:disabled{
+  cursor: default;
+  transform: none;
+}
+
+/* Zouppe */
+.zouppe {
+  background : none;
+  border: none;
+
+}
+
+.zouppe img{
+  transform: rotate(-7deg) scale(0.8);
+}
+
+.zouppe:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.zouppe:disabled{
+  opacity: 0.5;
+}
+
+.zouppe:hover:disabled {
+  cursor: default;
+  transform: none;
+}
+
+/* Restart */
+.restart{
+  background : none;
+  border: none;
+}
+
+#restart1{
+  position : relative;
+  bottom : 8vh;
+  left : 30vw;
+}
+
+.restart img{
+  width: 40px;
+  height: 40px;
+}
+
+.restart:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+/*----- Victory -----*/
+#victory {
+  text-align: center;
+  font-size: 3em;
+
+  z-index: 1;
+  position: absolute;
+
+  display: flex;
+  flex-flow: column;
+
+  left: 0; 
+  right: 0; 
+  top: 0;
+  bottom: 0;
+  margin-left: auto; 
+  margin-right: auto; 
+  margin-top: auto;
+  margin-bottom: auto;
+
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+
+  color: var(--pawn1);
+  background-color: white;
+  border-radius: 10%;
+  border: solid
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+}
