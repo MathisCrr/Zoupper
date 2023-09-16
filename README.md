@@ -1,7 +1,7 @@
 # Zoupper
 ## Description 📄
 Zoupper is a game that I made a long time ago to practice JavaScript. 
-As in power 4 you must line up 4 pawns to win. But you have the possibility of removing a pawn from below ("you zouppe a pion"). You cannot zouppe a column where a pawn has just been placed and you cannot place a pawn in a column which has just been zoupped. <br>
+As in connect4 you must line up 4 pawns to win. But you have the possibility of removing a pawn from below ("you zouppe a pion"). You cannot zouppe a column where a pawn has just been placed and you cannot place a pawn in a column which has just been zoupped. <br>
 🔗 [**Here**](https://zoupper.netlify.app/) the online version of this website. Enjoy !
 
 ## Getting Started 🛠️
